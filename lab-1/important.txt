@@ -1,0 +1,5 @@
+docker build --rm . -t lab1-image && docker run --rm -ti -v "%cd%\program":/program lab1-image
+
+java -jar /usr/local/lib/antlr-4.13.1-complete.jar -Dlanguage=Python3 MiniLang.g4
+
+antlr = alias antlr='java -jar /usr/local/lib/antlr-4.13.1-complete.jar'
